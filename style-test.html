@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Style test</title>
+	<style type="text/css">
+		h1{
+			font-size: 30px;
+			color: #47D6CF; /*codigo de html*/
+		}
+		h2{
+			font-size: 20px;
+			color: salmon;
+		}
+		h2{
+			color: #EF5553; /*este color se sobrepone al anterior*/
+		}
+		.big{
+			font-size: 60px
+		}
+		.uppercase{
+			text-transform: uppercase;
+		}
+		.big.uppercase{
+			color:navy;
+		}
+	</style>
+</head>
+<body>
+	<h1>Heading 1 - 1</h1>
+	<h1 style="font-size: 30px;color: salmon;">Heading 1 - 2</h1> <!--este estilo se sobrepone al anterior por ser mas especifico-->
+	<h1>Heading 1 - 3</h1>
+
+	<h2 class="big">Heading 2 - 1</h2>
+	<h2 class="uppercase">Heading 2 - 2</h2>
+	<h2 class="uppercase big">Heading 2 - 3</h2>
+</body>
+</html>
